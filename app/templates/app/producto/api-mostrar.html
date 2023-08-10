@@ -1,0 +1,45 @@
+{% extends 'app/user/baseuser.html' %}
+{% load static %}
+{% block contenidouser %}
+
+<div class="container bg-light text-center">
+  <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Digimon</h4>
+  <div class="row text-center">
+
+    {% for aux in listaDigimon %}
+
+    <div class="col-md-3">
+      <div class="card adapt">
+        {% if aux.img %}
+        <img src="{{ aux.img }}" class="card-img-top">
+        {% else %}
+        <img class="card-img-top" src="{% static 'app/img/baberos.jpg' %}" alt="Card image" ||>
+
+
+        {% endif %}
+
+        <div class="card-body">
+          <h4 class="card-title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> {{aux.name }}</h4>
+
+          <p class="card-text" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Level:
+            {{ aux.level }}</p>
+          <form action="" method="POST">
+
+
+            <br>
+            
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+    {% endfor %}
+  </div>
+</div>
+  <!-- END DIGIMON-->
+
+
+
+  {% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block contenido %}
+<div class="container bg-light " style="height: 500px; padding: 30px 80px 0 80px;">
+    <h3 style="margin-left: 35%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Iniciar Sesión</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form | crispy }}
+        <button type="submit" class="btn btn-success">Iniciar sesión</button>
+        <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+    </form>
+</div>
+{% endblock %}

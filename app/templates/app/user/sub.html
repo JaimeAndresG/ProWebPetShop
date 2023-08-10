@@ -1,0 +1,59 @@
+{% extends 'app/user/baseuser.html' %}
+{% load static %}
+{% block contenidouser %}
+{% load crispy_forms_tags %}
+<!-- INICIO Productos en cartas-->
+
+{% if usuario == 1 %}
+<div class="jumbotron bg-light" style="height: 500px; padding: 30px 80px 0 80px;">
+    <form action="" method="POST" class="m-5" enctype="multipart/form-data">
+        {% csrf_token %}
+    <h1 class="display-4">Gracias, {{ user.username}}! <i class="fa-solid fa-paw"></i></h1>
+    <p class="lead">Gracias a tu apoyo podemos seguir trabajando y ofrecerte un gran servicio.</p>
+    <hr class="my-4">
+    <p>Recuerda que tienes los siguientes beneficios por estar suscrito!!:</p><br>
+    <p>  <i class="fa-solid fa-paw"></i> Descuento del 5% en el total de tu compras</p>
+    <p>  <i class="fa-solid fa-paw"></i> ser parte de la familia petshop 
+        </p>
+    <p class="lead">
+
+        <input type="hidden" name="email" id="email" value='nocaca'>
+       
+
+        <input type="submit" class="btn btn  mt-3" value="Desubcribirse!">
+    </form>
+    </p>
+  </div>
+
+{% elif usuario == 0 %}
+<div class="jumbotron bg-light" style="height: 500px; padding: 30px 80px 0 80px;">
+    <form action="" method="POST" class="m-5" enctype="multipart/form-data">
+        {% csrf_token %}
+    <h1 class="display-4">Hola, {{ user.username}}! <i class="fa-solid fa-paw"></i></h1>
+    <p class="lead">Tu subscripcion  nos ayuda a  antener el sitio en funcionamiento y es muy importante para nosotros.</p>
+    <hr class="my-4">
+    <p>Considera subscribirte para obtener los descuentos exclusivos que son:</p><br>
+    <p>  <i class="fa-solid fa-paw"></i> Descuento del 5% en el total de tu compras</p>
+    <p>  <i class="fa-solid fa-paw"></i> ser parte de la familia petshop 
+        </p>
+    <p class="lead">
+
+        <input type="hidden" name="email" id="email" value="{{user.email}}">
+        
+
+        <input type="submit" class="btn btn  mt-3" value="Suscribete!">
+    </form>
+    </p>
+  </div>
+
+{% endif %}
+
+
+
+
+
+
+{% endblock %}
+
+
+    

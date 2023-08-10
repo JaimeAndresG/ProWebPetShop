@@ -1,0 +1,110 @@
+{% extends 'app/user/baseuser.html' %}
+{% load static %}
+{% block contenidouser %}
+<div  class="container sm-xl " style="height: 500px; padding: 30px 80px 0 80px;" >
+    <h4 class="text-center teal lighten-4" style="font-family: Arial, Helvetica, sans-serif;" > Seguimientos</h4>
+ <div class="row" >
+    <table class="table highlight table-condensed responsive-table teal lighten-4 rounded">
+        <thead>
+        <tr>
+          <td>Usuario</td>
+        <td>Nombre</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+        <td>Cantidad</td>
+        <td>Estado</td>
+        <td>Cambio</td>
+        {% if aux.estado == "entregado" %}
+        <td>Eliminar</td>
+        {% endif %}
+        </tr>
+        </thead>
+        <Tbody>
+            {% for aux in seguiTodos %}
+                        <tr>
+                            <td>{{ aux.usuario }}</td>
+                            <td>{{ aux.producto.nombre }}</td>
+                            <td>{{ aux.producto.descripcion }}</td>
+                            <td>${{ aux.producto.precio }}</td>
+                            <td>{{ aux.cantidad }}</td>
+                            <td>{{ aux.estado }}</td>
+
+                          
+                            
+                  
+                            <td>
+                                <form action="# " method="POST" class="" enctype="multipart/form-data">
+
+                                    {% csrf_token %}
+                                    <input type="hidden" name="codigo" id="codigo" value="{{aux.codigo}}">
+
+
+                                {% if aux.estado == "Pago aprobado!" %}
+
+                                <select class="browser-default" name="seleccion" id="seleccion">
+                                    
+                                    <option value="{{ aux.estado }}" selected>{{aux.estado}}</option>
+                                    <option value="en preparacion">en preparacion</option>
+                                    <option value="en reparto">en reparto</option>
+                                    <option value="entregado">entregado</option>
+                                  </select>
+                                  <input type="submit" class="btn btn  mt-3" value="Modificar">
+                                  {% endif %}
+
+                                  {% if aux.estado == "en preparacion" %}
+                                  <select class="browser-default"  name="seleccion" id="seleccion">
+
+                                    <option value="Pago aprobado!">Pago aprobado!</option>
+                                    <option value="{{ aux.estado }}" selected>{{aux.estado}}</option>
+                                    <option value="en reparto">en reparto</option>
+                                    <option value="entregado">entregado</option>
+                                  </select>
+                                  <input type="submit" class="btn btn  mt-3" value="Modificar">
+                                  {% endif %}
+
+                                  {% if aux.estado == "en reparto" %}
+                                  <select class="browser-default"  name="seleccion" id="seleccion">
+                                    
+                                    <option value="Pago aprobado!">Pago aprobado!</option>
+                                    <option value="en preparacion">en preparacion</option>
+                                    <option value="{{aux.estado}}" selected>{{aux.estado}}</option>
+                                    
+                                    <option value="entregado">entregado</option>
+                                  </select>
+                                  <input type="submit" class="btn btn  mt-3" value="Modificar">
+                                  {% endif %}
+
+                                  {% if aux.estado == "entregado" %}
+                                   <select class="browser-default"  name="seleccion" id="seleccion">
+                                    
+                                    <option value="Pago aprobado!">Pago aprobado!</option>
+                                    <option value="en preparacion">en preparacion</option>
+                                    <option value="en reparto">en reparto</option>
+                                    <option value="{{ aux.estado }}" selected>{{aux.estado}}</option>
+                                    
+                                    
+                                  </select>
+                                  <input type="submit" class="btn btn  mt-3" value="Modificar">
+                                  {% endif %}
+                                </form>
+                            </td>
+
+
+                            {% if aux.estado == "entregado" %}
+                            <td>
+                            
+                                <a onclick="deleteSeguimiento({{aux.codigo}})"  class="btn red darken-3">Eliminar</a>
+                                
+                            </td>
+                            {% endif %}
+                        </tr>
+              {% endfor %}
+        </tbody>
+    </table>
+
+
+ </div>
+</div>
+
+
+{% endblock %}

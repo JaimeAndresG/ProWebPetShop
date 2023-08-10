@@ -1,0 +1,62 @@
+{% extends 'app/perfil/baseperfil.html' %}
+{% load static %}
+{% block contenidoperfil %}
+
+
+<div class="container mt-4 te">
+  <h4 class="text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mis Compras
+  </h4>
+  {% for aux in listaSeguimiento %}
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">
+        <p class="compra-title2"></p>
+      </h4>
+      <div class="row">
+        <div class="col-sm-3"><img class="imgcompra" src="{{aux.producto.imagen.url }}"></div>
+        <div class="col-sm-9">
+          <p class="card-text compra-texto mt-5">
+        
+           {{ aux.producto.nombre }}
+              
+          </p>
+          <p class="text-secondary"> {{ aux.producto.descripcion }}</p>
+          <p> ${{ aux.producto.precio }} </p>
+          <p> cantidad : {{ aux.cantidad }} </p>
+          <blockquote>
+            Estado: {{ aux.estado }}
+          </blockquote>
+
+          <form action="{% url 'seguimiento' %}" method="POST" class="" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            <input type="hidden" name="nombre" id="nombre" value="{{aux.producto.nombre}}">
+            <input type="hidden" name="precio" id="precio" value="{{ aux.producto.precio }}">
+            <input type="hidden" name="descripcion" id="descripcion" value="{{aux.producto.descripcion}}">
+            <input type="hidden" name="cantidad" id="cantidad" value="{{ aux.cantidad }}">
+            <input type="hidden" name="estado" id="estado" value="{{ aux.estado }}">
+            <input type="hidden" name="imagen" id="imagen" value="{{aux.producto.imagen.url }}">
+    
+
+          <input type="submit" class="btn btn  mt-3" value="Seguimiento">
+          </form>
+
+
+        </div>
+        
+      </div>
+
+     
+      <div class="d-flex justify-content-end">
+        
+      
+
+      </div>
+
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+{%endblock%}

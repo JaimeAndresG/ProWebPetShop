@@ -1,0 +1,166 @@
+{% extends 'app/perfil/baseperfil.html' %}
+{% load static %}
+{% block contenidoperfil %}
+
+{% if producto %}
+<div class="col-sm-10">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-8 mt-5 ">
+
+
+        <p class="compra-title text-center">Seguimiento Orden#145673565</p>
+
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              <p class="compra-title2">Orden#145673565</p>
+            </h4>
+
+            <blockquote> Estado:
+              {{estado}} <div class="spinner-grow spinner-grow-sm text-danger" role="status">
+
+              </div>
+            </blockquote>
+            <div class="row ">
+              <div class="col-sm-4  d-flex justify-content-center">
+
+                <i class="fa-solid fa-box-open fa-4x mt-5"></i>
+
+              </div>
+              <div class="col-sm-4  d-flex justify-content-center">
+                <i class="fa-solid fa-truck fa-4x mt-5"></i>
+              </div>
+
+              <div class="col-sm-4  d-flex justify-content-center">
+                <i class="fa-solid fa-house-user fa-4x mt-5"></i>
+              </div>
+            </div>
+
+            {% if estado == "Pago aprobado!" %}
+            <div class="row">
+              <div class="col-sm-4 text-center seguimientotxt"> En Preparacion</div>
+              <div class="col-sm-4 text-center seguimientotxt">En Reparto
+              
+
+              </div>
+
+              <div class="col-sm-4 text-center seguimientotxt">Entregado</div>
+
+
+            </div>
+            <div class="progress">
+
+              <div class="determinate" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+
+            {% if estado == "en preparacion" %}
+            <div class="row">
+              <div class="col-sm-4 text-center seguimientotxt"> En Preparacion               <div class="spinner-grow spinner-grow-sm text-success" role="status">
+
+              </div></div>
+              <div class="col-sm-4 text-center seguimientotxt">En Reparto
+  
+              </div>
+
+              <div class="col-sm-4 text-center seguimientotxt">Entregado</div>
+
+
+            </div>
+            <div class="progress">
+
+              <div class="determinate" style="width: 25%;"></div>
+            </div>
+            {% endif %}
+            {% if estado == "en reparto" %}
+            <div class="row">
+              <div class="col-sm-4 text-center seguimientotxt"> En Preparacion <i class="fa-solid fa-check"></i></div>
+              <div class="col-sm-4 text-center seguimientotxt">En Reparto
+                <div class="spinner-grow spinner-grow-sm text-success" role="status">
+
+                </div>
+              </div>
+
+              <div class="col-sm-4 text-center seguimientotxt">Entregado</div>
+
+
+            </div>
+            <div class="progress">
+
+              <div class="determinate" style="width: 50%;"></div>
+            </div>
+            {% endif %}
+
+            
+            {% if estado == "entregado" %}
+            <div class="row">
+              <div class="col-sm-4 text-center seguimientotxt"> En Preparacion  <i class="fa-solid fa-check"></i></div>
+              <div class="col-sm-4 text-center seguimientotxt">En Reparto <i class="fa-solid fa-check"></i>
+                
+              </div>
+
+              <div class="col-sm-4 text-center seguimientotxt">Entregado <i class="fa-solid fa-check"></i>
+              
+              </div>
+
+
+            </div>
+            <div class="progress">
+
+              <div class="determinate blue" style="width: 100%;"></div>
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              <p class="compra-title2">Orden#145673565</p>
+            </h4>
+            <div class="row">
+              <div class="col-sm-2"><img class="imgcompra" src="{{producto.imagen }}">
+              </div>
+             
+                <div class="col-sm-2">
+                </div>
+              <div class="col-sm-5">
+                <p class="card-text compra-texto mt-5">
+                  {{producto.nombre}}
+                </p>
+                <p class="text-secondary">{{producto.descripcion}} |  {{producto.cantidad}}  unidad/es</p>
+              </div>
+
+            </div>
+
+
+
+            <p class="compra-texto">Total: {{producto.precio}} clp</p>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="card-link btn">Volver a comprar</a>
+            </div>
+
+          </div>
+        </div>  
+
+
+      </div>
+    </div>
+    <div class="col-sm-2 "></div>
+
+  </div>
+
+</div>
+
+</div>
+</div>
+</div>
+{% endif %}
+
+{%endblock%}
