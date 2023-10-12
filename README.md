@@ -9,10 +9,11 @@ posibles compras de estos productos, ademas estos estan gestionados principalmen
 
 # Imagenes del proyecto
 
-![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/6849c41a-e0f8-4840-93f6-5e4c16e7949c)
+<span>![</span>https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/b9206533-73b6-4eff-a844-c89909cfc626<span>/span><span>]</span><span>(</span><https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/b9206533-73b6-4eff-a844-c89909cfc626span></span><span>)</span>
 
 
 
+![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/b9206533-73b6-4eff-a844-c89909cfc626)
 
 
 
