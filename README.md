@@ -18,7 +18,7 @@ posibles compras de estos productos, ademas estos estan gestionados principalmen
   ![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/0e6703fb-b6fd-4670-b743-b7ca7abe8bc1)
 
 
-* Ademas el seguimiento de los productos una vez comprados y despechados (este punto es solo mockup , debido que hubo cambio y se agrego un historial)
+* Ademas el seguimiento de los productos una vez comprados y despechados hacias sus clientes
 
   ![Seguimiento](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/434f6060-65e3-4fde-bb5d-41cc75e6151e)
 
