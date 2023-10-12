@@ -9,10 +9,17 @@ posibles compras de estos productos, ademas estos estan gestionados principalmen
 
 # Algunas Imagenes del proyecto
 
-En este paso el administrador debe agregar los productos para que estos puedan ser visualizados por los clientes
-![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/0e6703fb-b6fd-4670-b743-b7ca7abe8bc1)
+* Como es la pagina en su totalidad
+  ![Pagina Completa](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/64c8e4dc-85fd-4f67-9c87-95ed7c480544)
 
 
-El admin en funcion debia realizar todo tipo de tarea como administrar la mayoria de los crud(productos) , seguimientos de compras.. entre otros
 
-![Sub menu listar usuario](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/ddc55830-9d6e-4ebc-9ced-7d83243c0ee5)
+* En este paso el administrador debe agregar los productos para que estos puedan ser visualizados por los clientes
+  ![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/0e6703fb-b6fd-4670-b743-b7ca7abe8bc1)
+
+
+* Ademas el seguimiento de los productos una vez comprados y despechados (este punto es solo mockup , debido que hubo cambio y se agrego un historial)
+
+  ![Seguimiento](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/434f6060-65e3-4fde-bb5d-41cc75e6151e)
+
+
