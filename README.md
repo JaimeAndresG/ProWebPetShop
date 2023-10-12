@@ -2,9 +2,11 @@
 
 # ProWebPetShop
 
-PetShop: Es una pagina web que Desarrollé en conjunto con mis compañeros de instituto Duoc UC, es una página web que utiliza Python y el framework Django. 
-Su función principal es registrar los productos de una tienda de mascotas y las 
-posibles compras de estos productos, ademas estos estan gestionados principalmente por un carrito de compras en el cual cada usuario que realize la compra se vera reflejado en su historial de seguimiento de cada compra que realizo. Para gestionar la base de datos, utilicé MySQL en conjunto con el programa XAMPP.
+PetShop: Una página web que desarrollé en colaboración con mis compañeros de Duoc UC. Utiliza Python y el framework Django para su funcionamiento. Su propósito principal es llevar un registro de los productos disponibles en una tienda de mascotas y las compras realizadas.
+
+La gestión de productos se realiza a través de un carrito de compras, donde cada usuario que realiza una compra puede ver su historial de adquisiciones. Cuando los clientes completan el pago, el administrador confirma la transacción y los productos entran en proceso de seguimiento y envío.
+
+Para la gestión de la base de datos, hemos empleado MySQL en conjunto con el programa XAMPP.
 
 
 # Algunas Imagenes del proyecto
