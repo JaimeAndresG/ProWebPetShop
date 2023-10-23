@@ -11,32 +11,31 @@ Para la gestión de la base de datos, hemos empleado MySQL en conjunto con el pr
 
 # Algunas Imagenes del proyecto
 
-* Como es la pagina en su totalidad
+* La página web en su totalidad muestra los productos junto con sus respectivos stocks.
   ![Pagina Completa](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/64c8e4dc-85fd-4f67-9c87-95ed7c480544)
 
 
-* El login de la pagina utilizando la estructura base de DJANGO en conjunto con su funcionalidad    
+* El proceso de inicio de sesión en la página se realiza utilizando la estructura base de DJANGO y sus funcionalidades.
 ![Login-Django](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/78d049f1-75d1-4df8-a0b3-e90a3d703860)
 
 
-* Por otra parte tenemos el formulario que tambien cuenta con la funcionalidad principal de DJANGO y sus respectivas validaciones
+* El formulario en la página también incluye las funcionalidades principales de DJANGO y las correspondientes validaciones.
 ![Formulario-Django](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/d9734984-eb3b-45c2-968c-06cf7f25e2b2)
 
 
-* En este paso el administrador debe agregar los productos para que estos puedan ser visualizados por los clientes
+* El administrador es responsable de agregar productos para que estén disponibles para los clientes.
   ![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/0e6703fb-b6fd-4670-b743-b7ca7abe8bc1)
 
 
-* En este paso se contempla el uso del framework django en el se puede contemplar la creacion del super usuario en este caso el administrador con todo los mantenedores
-  con los cuales se trabajo en este proyecto la mayoraria CRUD de productos y de usuario
+* La administración de la página incluye el uso del framework Django, que permite la creación de un superusuario o administrador, así como la gestión de mantenimiento de productos y usuarios, incluyendo operaciones CRUD.
 ![Interfaz-Admin](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/ac12a132-f181-49b1-a2ff-36b4656b28b2)
 
 
 
-* Además, uno de los principales funcionamientos de la página web era que una vez que los clientes eligieran los productos, estos debían visualizarse en la sección de 'Mi carrito', mostrando el stock y la suma total de todos los productos.
+* Uno de los aspectos destacados de la página es que, una vez que los clientes eligen productos, estos se agregan automáticamente a la sección 'Mi carrito', donde se muestra el stock disponible y la suma total de todos los productos.
 ![Carrito-Compra](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/741520e6-9efd-4ce1-99e5-6b2b4a1b3c1f)
 
 
-*Aunque existen muchas otras funciones, estas eran las principales características que la página web PetShop debía tener. Fue el primer proyecto semestral que realicé durante mi formación académica, bajo la supervisión de uno de los profesores del Instituto Duoc UC.
+*Aunque existen muchas otras funcionalidades, estas son las características principales que se esperaba que tuviera la página web PetShop. Este proyecto fue mi primer proyecto semestral durante mi formación académica, supervisado por uno de los profesores del Instituto Duoc UC.
 
 
