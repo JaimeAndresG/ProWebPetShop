@@ -15,13 +15,28 @@ Para la gestión de la base de datos, hemos empleado MySQL en conjunto con el pr
   ![Pagina Completa](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/64c8e4dc-85fd-4f67-9c87-95ed7c480544)
 
 
+* El login de la pagina utilizando la estructura base de DJANGO en conjunto con su funcionalidad    
+![Login-Django](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/78d049f1-75d1-4df8-a0b3-e90a3d703860)
+
+
+* Por otra parte tenemos el formulario que tambien cuenta con la funcionalidad principal de DJANGO y sus respectivas validaciones
+![Formulario-Django](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/d9734984-eb3b-45c2-968c-06cf7f25e2b2)
+
 
 * En este paso el administrador debe agregar los productos para que estos puedan ser visualizados por los clientes
   ![Agregar Productos](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/0e6703fb-b6fd-4670-b743-b7ca7abe8bc1)
 
 
-* Ademas el seguimiento de los productos una vez comprados y despechados hacias sus clientes
+* En este paso se contempla el uso del framework django en el se puede contemplar la creacion del super usuario en este caso el administrador con todo los mantenedores
+  con los cuales se trabajo en este proyecto la mayoraria CRUD de productos y de usuario
+![Interfaz-Admin](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/ac12a132-f181-49b1-a2ff-36b4656b28b2)
 
-  ![Seguimiento](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/434f6060-65e3-4fde-bb5d-41cc75e6151e)
+
+
+* Además, uno de los principales funcionamientos de la página web era que una vez que los clientes eligieran los productos, estos debían visualizarse en la sección de 'Mi carrito', mostrando el stock y la suma total de todos los productos.
+![Carrito-Compra](https://github.com/JaimeAndresG/ProWebPetShop/assets/101838917/741520e6-9efd-4ce1-99e5-6b2b4a1b3c1f)
+
+
+*Aunque existen muchas otras funciones, estas eran las principales características que la página web PetShop debía tener. Fue el primer proyecto semestral que realicé durante mi formación académica, bajo la supervisión de uno de los profesores del Instituto Duoc UC.
 
 
