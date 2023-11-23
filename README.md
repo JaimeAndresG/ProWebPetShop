@@ -6,7 +6,7 @@ PetShop: Una página web que desarrollé en colaboración con mis compañeros de
 
 La gestión de productos se realiza a través de un carrito de compras, donde cada usuario que realiza una compra puede ver su historial de adquisiciones. Cuando los clientes completan el pago, el administrador confirma la transacción y los productos entran en proceso de seguimiento y envío.
 
-Para la gestión de la base de datos, hemos empleado MySQL en conjunto con el programa XAMPP.
+Para la gestión de la base de datos, hemos empleado XAMPP.
 
 
 # Algunas Imagenes del proyecto
